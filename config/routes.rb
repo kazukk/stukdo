@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tasks
+  resources :taks
   devise_for :users
   #get 'pages/home'
 
