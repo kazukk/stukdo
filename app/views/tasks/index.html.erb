@@ -1,62 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>To_do</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>State</th>
-      
-      <th colspan="4"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-     
-<%= render @to_do %>
+<div class="row">
+  <div class="col-md-4"><h1 class="text-center">To_do</h1>
+    <%= render @to_do %>
 
-  </tbody>
-</table>
+    </div>
 
-<br>
+  <div class="col-md-4"><h1 class="text-center">Doing</h1>
+    <%= render @doing %>
 
-<h1>Doing</h1>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>State</th>
-      
-      <th colspan="5"></th>
-    </tr>
-  </thead>
+  <div class="col-md-4"><h1 class="text-center">Done</h1>
+    <%= render @done %>
 
-<%= render @doing %>
-
-</table>
-
-<br>
-
-<h1>Done</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-
-      <th>State</th>
-      
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-<%= render @done %>
+  </div>
 
 
 
-</table>
+</div>
+
 
 
 
