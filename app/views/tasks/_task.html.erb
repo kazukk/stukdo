@@ -18,7 +18,14 @@
 -->
 
 <div class= "panel panel-primary">
-      <div class= "panel-heading" >created <%= time_ago_in_words(task.created_at) %> header</div>
+      <div class= "panel-heading" >created <%= time_ago_in_words(task.created_at) %> 
+
+<%= link_to "x", task_path(task), method: :delete, data: {confirm: "Are you sure?"}, class: "pull-right" %>
+
+      </div>
+
+
+
         <div class= "panel-body"><%= task.content %>     </div>
 
 
